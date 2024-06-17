@@ -12,14 +12,14 @@ global.mongodb = process.env.MONGODB_URI || "";
 global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "null";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
-global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Lagos";
+global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Nairobi";
 global.github = process.env.GITHUB || "https://github.com/Astropeda/Asta-Md";
 global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
 global.website = process.env.GURL || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://i.imgur.com/P37NWrz.jpeg";
-global.devs = "2348039607375";
-global.sudo = process.env.SUDO || "2348039607375";
-global.owner = process.env.OWNER_NUMBER || "2348039607375";
+global.devs = "254105008363";
+global.sudo = process.env.SUDO || "254105008363";
+global.owner = process.env.OWNER_NUMBER || "254105008363";
 global.style = process.env.STYLE || "3";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
@@ -45,7 +45,7 @@ global.SESSION_ID =
   ""
 module.exports = {
   menu: process.env.MENU || "",
-  HANDLERS: process.env.PREFIX || "/",
+  HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
   caption: process.env.CAPTION || "©ᴀsᴛᴀ ᴍᴅ",
