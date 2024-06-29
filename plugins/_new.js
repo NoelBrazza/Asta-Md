@@ -14,7 +14,7 @@ let {
  smd(
   {
     pattern: "channel",
-    desc: "To check ping",
+    desc: "Whatsapp channel",
     react: "🗨️",
     category: "user",
     filename: __filename,
@@ -33,7 +33,7 @@ let {
 smd(
   {
     pattern: "support",
-    desc: "To check ping",
+    desc: "Asta support team",
     react: "🗨️",
     category: "user",
     filename: __filename,
