@@ -133,7 +133,7 @@ cmd(
 );
 cmd(
   {
-    pattern: "slog",
+    pattern: "savemsg",
     desc: "Save Message to log number",
     category: "whatsapp",
     filename: __filename,
@@ -234,8 +234,8 @@ cmd(
 );
 cmd(
   {
-    pattern: "location",
-    desc: "Adds *readmore* in given text.",
+    pattern: "locate",
+    desc: "Gets location of given coordinates.",
     category: "whatsapp",
     filename: __filename,
   },
@@ -430,7 +430,7 @@ smd(
   {
     pattern: "edit",
     fromMe: true,
-    desc: "edit message that sended by bot",
+    desc: "edit message that sent by bot",
     type: "whatsapp",
   },
   async (_0x1afa64, _0x539d95) => {
