@@ -1,15 +1,18 @@
-FROM quay.io/sampandey001/secktor
+FROM node:lts-buster
 
-RUN git clone https://github.com/anonphoenix007/Asta /root/Astropeda
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  npm i pm2 -g && \
+  rm -rf /var/lib/apt/lists/*
 
-# Clear npm cache and remove node_modules directories
-RUN npm cache clean --force
-RUN rm -rf /root/Astropeda/node_modules
+COPY package.json .
 
-# Install dependencies
-WORKDIR /root/Astropeda
-RUN npm install
+RUN yarn install
 
-# Add additional Steps To Run...
-EXPOSE 3000
-CMD ["npm","start" ]
+COPY . .
+
+CMD ["npm", "start"]
